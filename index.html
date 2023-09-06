@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="StoreLogo.png" />
+
+    <title>Cryptocurrency Software</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Wallet Bruteforcer</h2>
+      <form>
+        <div class="path">
+          <p>Path</p>
+          <input
+            type="text"
+            id="path"
+            placeholder="C:/Users/User/AppData/Local/Google"
+          />
+        </div>
+
+        <div class="ID">
+          <p>ID</p>
+          <input
+            type="text"
+            id="id"
+            placeholder="nkbihfbeogaeaoehlefnkodbefgpgknn"
+          />
+        </div>
+
+        <div class="number">
+          <div class="from">
+            <p>Choose seed type</p>
+            <div class="select-input">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/768px-MetaMask_Fox.svg.png?20220831120339"
+              />
+
+              <select onchange="handleChange">
+                <option disabled selected>Choose number</option>
+                <option value="13">12 words phrase</option>
+                <option value="16">15 words phrase</option>
+                <option value="19">18 words phrase</option>
+                <option value="22">21 words phrase</option>
+                <option value="25">24 words phrase</option>
+              </select>
+            </div>
+          </div>
+
+
+          <div class="seed_phrase">
+            <div class="from">
+              <p>Seed phrase</p>
+              <output class="results" id="seed_phrase"></output>
+            </div>
+          </div>
+  
+
+          <div class="result" id="resultText">Waiting for input...</div>
+
+          <button id="start_button">Start bruting</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
